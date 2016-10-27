@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" stylesheets="@../css/mystyle.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainController">
+   <center>
+      <SplitPane dividerPositions="0.2" prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="750.0" prefWidth="246.0" styleClass="left-split">
+               <children>
+                  <VBox layoutY="57.0" prefHeight="400.0" prefWidth="207.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <HBox prefHeight="74.0" prefWidth="240.0">
+                           <children>
+                              <ImageView fitHeight="80.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true" styleClass="portrait">
+                                 <image>
+                                    <Image url="@../image/portrait.jpg" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Pane prefHeight="76.0" prefWidth="203.0" />
+                              <AnchorPane prefHeight="76.0" prefWidth="145.0">
+                                 <children>
+                                    <Text layoutX="-9.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Luisa Brown" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                     </children></VBox>
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="347.0" prefWidth="476.0" styleClass="right-split">
+               <children>
+                  <Region layoutX="-1.0" prefHeight="37.0" prefWidth="959.0" styleClass="warning-hint" visible="false" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                  <Region layoutX="52.0" layoutY="82.0" prefHeight="200.0" prefWidth="200.0" styleClass="text-region" />
+                  <Region layoutX="351.0" layoutY="82.0" prefHeight="200.0" prefWidth="200.0" styleClass="text-region" />
+                  <Region layoutX="652.0" layoutY="82.0" prefHeight="200.0" prefWidth="200.0" styleClass="text-region" />
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </center>
+   <top>
+      <HBox prefHeight="50.0" prefWidth="200.0" styleClass="top-bar" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="52.0" fitWidth="191.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/logo.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TextField layoutX="22.0" layoutY="14.0" AnchorPane.rightAnchor="10.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>
