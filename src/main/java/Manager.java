@@ -49,6 +49,7 @@ public class Manager {
             Parent root = loader.load();
             stage.setScene(new Scene(root));
             MainController mainController = loader.<MainController>getController();
+            mainController.initializeFont();
         } catch (IOException e) {
             e.printStackTrace();
         }

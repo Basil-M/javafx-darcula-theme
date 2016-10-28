@@ -1,18 +1,44 @@
-.root {
+/*.input {*/
+/*}*/
+
+.login {
+    -fx-font-size: 12px;
+}
+
+.login-root {
     -fx-font-family      : "Trebuchet MS", sans-serif;
     -fx-text-fill: #ADADAD;
     -fx-background-color : #3C3F41;
 }
 
-.input {
+
+.login-label {
+-fx-text-fill: #ADADAD;
 }
 
-.label {
-    -fx-text-fill: #ADADAD;
-}
-
-.text-field
+.login-btn
 {
+-fx-fonts-weight       : bold;
+-fx-background-color  : linear-gradient(#344A64, #263549);
+-fx-border-color      : #575D65;
+-fx-border-radius     : 4px;
+-fx-background-radius : 4px;
+-fx-text-fill         : #ADADAD;
+}
+
+.login-btn:hover
+{
+-fx-background-color : #202C39;
+-fx-text-fill        : #ADADAD;
+}
+
+.login-btn:pressed
+{
+-fx-background-color : #2C3E50;
+-fx-text-fill        : #A7BEE5;
+}
+
+.login-text-field {
     -fx-text-fill        : #ADADAD;
     -fx-background-color : #45494A;
     -fx-border-color     : #646464;
@@ -21,8 +47,7 @@
     -fx-prompt-text-fill : #585858;
 }
 
-.text-field:focused, .text-field:hover
-{
+.login-text-field:focused, .login-text-field:hover {
     -fx-background-color : #45494A;
     -fx-text-fill        : ADADAD;
     -fx-border-color     : #5794D1;
@@ -33,26 +58,48 @@
     -fx-effect: dropshadow(gaussian, rgba(199, 219, 239, 0.25), 1, 1, 0, 0);
 }
 
-.btn
-{
-    -fx-font-weight       : bold;
-    -fx-background-color  : linear-gradient(#344A64, #263549);
-    -fx-border-color      : #575D65;
-    -fx-border-radius     : 4px;
-    -fx-background-radius : 4px;
-    -fx-text-fill         : #ADADAD;
+/*.left-split {*/
+/*-fx-background-color: #3E434C;*/
+/*}*/
+
+/*.right-split {*/
+/*-fx-background-color: #3C3F41;*/
+/*}*/
+
+/*.left-top-bar {*/
+/*-fx-background-color: #2B3643;*/
+/*}*/
+
+/*.portrait {*/
+/*-fx-border-width: 2px;*/
+/*-fx-border-color: #ffffff;*/
+/*!*-fx-background-radius: 40px;*!*/
+/*!*-fx-border-radius: 40px;*!*/
+/*}*/
+
+/*.text-region {*/
+/*-fx-background-color: #2B2B2B;*/
+/*}*/
+
+/* http://graphicburger.com/simple-line-icons-webfont/ */
+
+* {
+    -fx-font-family: "Trebuchet MS", sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: #959fad;
+    -fx-padding: 0px !important;
 }
 
-.btn:hover
-{
-    -fx-background-color : #202C39;
-    -fx-text-fill        : #ADADAD;
+.header {
+    -fx-background-color: #2B3643;
 }
 
-.btn:pressed
-{
-    -fx-background-color : #2C3E50;
-    -fx-text-fill        : #A7BEE5;
+.sidebar-menu {
+    -fx-background-color: #364150;
+}
+
+.page-content {
+    -fx-background-color: #EAEAEA;
 }
 
 .split-pane {
@@ -65,32 +112,22 @@
     -fx-background-color: #515151;
 }
 
-
-
-.left-split {
-    -fx-background-color: #3E434C;
-}
-
-.right-split {
-    -fx-background-color: #3C3F41;
-}
-
-.top-bar {
-    -fx-border-width: 0px 0px 1px 0px;
-    -fx-border-color: #515151;
-}
-
-.portrait {
-    -fx-border-width: 2px;
-    -fx-border-color: #ffffff;
-    /*-fx-background-radius: 40px;*/
-    /*-fx-border-radius: 40px;*/
-}
-
 .warning-hint {
     -fx-background-color: #FFB878;
 }
 
-.text-region {
-    -fx-background-color: #2B2B2B;
+.text-field {
+    -fx-text-fill: #333;
+    -fx-background-color: #2B3643;
+    -fx-border-width: 0;
+    -fx-border-radius: 0px;
+    -fx-background-radius: 0px;
+    /*-fx-background-image:url('apr.png');*/
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: right center;
+}
+
+.text-field:focused, .text-field:hover {
+    -fx-background-color: #3F4F62;
+    -fx-border-width: 0;
 }
