@@ -1,8 +1,11 @@
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Rectangle2D;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
+import javafx.stage.Screen;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 import java.io.IOException;
 import java.net.URL;
@@ -13,7 +16,27 @@ import java.net.URL;
 public class Manager {
     private final Stage stage;
 
+    public double init_x;
+    public double init_y;
+
+    double getX(){
+        return stage.getX();
+    }
+
+    void setX(double x) {
+        stage.setX(x);
+    }
+
+    double getY() {
+        return stage.getY();
+    }
+
+    void setY(double y) {
+        stage.setY(y);
+    }
+
     Manager(Stage stage) {
+        stage.initStyle(StageStyle.UNDECORATED);
         this.stage = stage;
     }
 
@@ -45,14 +68,26 @@ public class Manager {
         URL url = getClass().getResource("layout/main.fxml");
         FXMLLoader loader = new FXMLLoader(url);
 
+
         try {
             Parent root = loader.load();
             stage.setScene(new Scene(root));
+
+            double width = stage.getWidth();
+            double height = stage.getHeight();
+            Rectangle2D screenBounds = Screen.getPrimary().getVisualBounds();
+            stage.setX((screenBounds.getWidth() - width) / 2);
+            stage.setY((screenBounds.getHeight() - height) / 2);
+
             MainController mainController = loader.<MainController>getController();
-            mainController.initializeFont();
+            mainController.initializeAction(this);
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    void close() {
+        stage.close();
     }
 
 

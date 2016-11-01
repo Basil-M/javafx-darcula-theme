@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.SplitPane?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -10,7 +10,6 @@
 <?import javafx.scene.layout.FlowPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
@@ -22,49 +21,183 @@
                <children>
                   <VBox layoutY="57.0" prefHeight="400.0" prefWidth="207.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <children>
-                        <HBox prefHeight="74.0" prefWidth="240.0">
+                        <HBox prefHeight="80.0" prefWidth="200.0">
                            <children>
-                              <ImageView fitHeight="80.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true" styleClass="portrait">
-                                 <image>
-                                    <Image url="@../image/portrait.jpg" />
-                                 </image>
-                                 <HBox.margin>
-                                    <Insets left="10.0" />
-                                 </HBox.margin>
-                              </ImageView>
-                              <Pane prefHeight="76.0" prefWidth="203.0" />
-                              <AnchorPane prefHeight="76.0" prefWidth="145.0">
+                              <AnchorPane prefHeight="74.0" prefWidth="33.0">
                                  <children>
-                                    <Text layoutX="-9.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Luisa Brown" />
+                                    <ImageView fitHeight="14.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="33.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="33.0">
+                                       <image>
+                                          <Image url="@../image/logo.png" />
+                                       </image>
+                                    </ImageView>
                                  </children>
-                              </AnchorPane>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin></AnchorPane>
+                              <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <AnchorPane prefHeight="40.0" prefWidth="100.0">
+                                       <children>
+                                          <ImageView fitHeight="29.0" fitWidth="50.0" layoutX="130.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="9.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="2.0">
+                                             <image>
+                                                <Image url="@../image/ic_menu_white_24dp.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="50.0" prefWidth="200.0" styleClass="slide-menu-btn">
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="240.0" styleClass="slide-menu-btn" HBox.hgrow="ALWAYS">
+                                 <graphic>
+                                    <AnchorPane prefHeight="50.0" prefWidth="68.0">
+                                       <children>
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="12.0">
+                                             <image>
+                                                <Image url="@../image/ic_timeline_white_24dp.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text fill="#cccccc" strokeType="OUTSIDE" strokeWidth="0.0" text="Analysis" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="17.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="50.0" prefWidth="200.0" styleClass="slide-menu-btn">
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="240.0" styleClass="slide-menu-btn" HBox.hgrow="ALWAYS">
+                                 <graphic>
+                                    <AnchorPane prefHeight="50.0" prefWidth="68.0">
+                                       <children>
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="12.0">
+                                             <image>
+                                                <Image url="@../image/ic_assessment_white_24dp.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text fill="#cccccc" strokeType="OUTSIDE" strokeWidth="0.0" text="Analysis" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="17.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="50.0" prefWidth="200.0" styleClass="slide-menu-btn">
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="240.0" styleClass="slide-menu-btn" HBox.hgrow="ALWAYS">
+                                 <graphic>
+                                    <AnchorPane prefHeight="50.0" prefWidth="68.0">
+                                       <children>
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="12.0">
+                                             <image>
+                                                <Image url="@../image/ic_today_white_24dp.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text fill="#cccccc" strokeType="OUTSIDE" strokeWidth="0.0" text="Todo" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="17.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="50.0" prefWidth="200.0" styleClass="slide-menu-btn">
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="240.0" styleClass="slide-menu-btn" HBox.hgrow="ALWAYS">
+                                 <graphic>
+                                    <AnchorPane prefHeight="50.0" prefWidth="68.0">
+                                       <children>
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="12.0">
+                                             <image>
+                                                <Image url="@../image/ic_add_shopping_cart_white_24dp.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text fill="#cccccc" strokeType="OUTSIDE" strokeWidth="0.0" text="Add order" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="17.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="50.0" prefWidth="200.0" styleClass="slide-menu-btn">
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="240.0" styleClass="slide-menu-btn" HBox.hgrow="ALWAYS">
+                                 <graphic>
+                                    <AnchorPane prefHeight="50.0" prefWidth="68.0">
+                                       <children>
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="12.0">
+                                             <image>
+                                                <Image url="@../image/ic_cached_white_24dp.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text fill="#cccccc" strokeType="OUTSIDE" strokeWidth="0.0" text="Shipment" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="17.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="50.0" prefWidth="200.0" styleClass="slide-menu-btn">
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="240.0" styleClass="slide-menu-btn" HBox.hgrow="ALWAYS">
+                                 <graphic>
+                                    <AnchorPane prefHeight="50.0" prefWidth="68.0">
+                                       <children>
+                                          <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="12.0">
+                                             <image>
+                                                <Image url="@../image/ic_supervisor_account_white_24dp.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Text fill="#cccccc" strokeType="OUTSIDE" strokeWidth="0.0" text="Users" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="17.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </graphic>
+                              </Button>
                            </children>
                         </HBox>
                      </children></VBox>
                </children></AnchorPane>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="347.0" prefWidth="476.0" styleClass="page-content">
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="755.0" prefWidth="719.0" styleClass="page-content">
                <children>
-                  <Region focusTraversable="true" layoutX="-1.0" prefHeight="37.0" prefWidth="959.0" styleClass="warning-hint" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
                   <FlowPane fx:id="icon_pane" layoutX="31.0" layoutY="47.0" prefHeight="689.0" prefWidth="896.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="80.0" />
-               </children></AnchorPane>
+               </children>
+            </AnchorPane>
         </items>
       </SplitPane>
    </center>
    <top>
-      <HBox prefHeight="50.0" prefWidth="200.0" styleClass="header" BorderPane.alignment="CENTER">
+      <HBox fx:id="topbar" prefHeight="40.0" prefWidth="1200.0" styleClass="header" BorderPane.alignment="CENTER">
          <children>
-            <AnchorPane prefHeight="200.0" prefWidth="240.0">
+            <AnchorPane prefHeight="40.0" prefWidth="50.0">
                <children>
-                  <ImageView fitHeight="14.0" fitWidth="120.0" layoutX="33.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="20.0">
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="2.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="5.0">
                      <image>
-                        <Image url="@../image/logo.png" />
+                        <Image url="@../image/ic_play_arrow_white_24dp.png" />
                      </image>
                   </ImageView>
                </children>
-            </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></AnchorPane>
+            <AnchorPane prefHeight="40.0" prefWidth="190.0">
                <children>
-                  <TextField layoutX="22.0" layoutY="14.0" promptText="Search..." styleClass="text-field" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <Text fill="WHITE" layoutX="59.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COMPANY" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="12.0" />
+               </children>
+            </AnchorPane>
+            <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <AnchorPane prefHeight="40.0" prefWidth="200.0">
+               <children>
+                  <ImageView fx:id="close" fitHeight="27.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="7.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="7.0">
+                     <image>
+                        <Image url="@../image/ic_close_white_24dp.png" />
+                     </image>
+                  </ImageView>
                </children>
             </AnchorPane>
          </children>

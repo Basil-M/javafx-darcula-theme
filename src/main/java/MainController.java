@@ -2,22 +2,48 @@ import de.jensd.fx.glyphs.GlyphIcon;
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon;
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView;
 import de.jensd.fx.glyphs.fontawesome.utils.FontAwesomeIconFactory;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.TreeView;
 import de.jensd.fx.glyphs.GlyphsStyle;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.FlowPane;
+import javafx.scene.layout.HBox;
 
 /**
  * Created by zhao_zh on 10/26/2016.
  */
 public class MainController {
-
+//
     @FXML
-    private FlowPane icon_pane;
+    private ImageView close;
+    @FXML
+    private HBox topbar;
 
-    void initializeFont (){
+    void initializeAction (final Manager manager){
+        close.setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                manager.close();
+            }
+        });
 
-            icon_pane.getChildren().add(FontAwesomeIconFactory.get().createIcon(FontAwesomeIcon.SEARCH_MINUS, "1em"));
+        topbar.setOnMousePressed(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                manager.init_x = manager.getX() - event.getScreenX();
+                manager.init_y = manager.getY() - event.getScreenY();
+            }
+        });
+
+        topbar.setOnMouseDragged(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                manager.setX(event.getScreenX() + manager.init_x);
+                manager.setY(event.getScreenY() + manager.init_y);
+            }
+        });
     }
 
 
