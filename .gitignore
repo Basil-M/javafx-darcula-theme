@@ -3,3 +3,5 @@ test
 build
 gradle
 .gradle
+login.company.properties
+login.company.xml
