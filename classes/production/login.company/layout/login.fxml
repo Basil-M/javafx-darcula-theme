@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.String?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.text.Text?>
-<?import javafx.scene.text.TextFlow?>
-
-<BorderPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../css/login.css" xmlns="http://javafx.com/javafx/8.0.91" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+<?import javafx.scene.layout.*?>
+<?import java.lang.String?>
+<BorderPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../css/login.css" xmlns="http://javafx.com/javafx/8.0.112-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginController">
    <center>
       <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="143.0" prefWidth="367.0">
          <center>
@@ -54,14 +47,4 @@
          </padding>
       </BorderPane>
    </center>
-   <bottom>
-      <TextFlow prefHeight="52.0" prefWidth="600.0" BorderPane.alignment="CENTER">
-         <children>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-flow" text="血栓弹力图软件中的信息和诊断陈述基于标准医疗出版物和参考资料中包含的信息。用户对一般或任何待定实例下解释或治疗建议的选择、使用或适用性负全部责任。在考虑血栓弹力图结果及做出诊断和治疗决定是，临床医生应利用自己的医疗判断以及患者临床条件的评估。" wrappingWidth="598.0" />
-         </children>
-         <padding>
-            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-         </padding>
-      </TextFlow>
-   </bottom>
 </BorderPane>

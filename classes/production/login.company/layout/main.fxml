@@ -17,7 +17,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="877.0" prefWidth="1436.0" stylesheets="@../css/mystyle.css" xmlns="http://javafx.com/javafx/8.0.91" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+<BorderPane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" stylesheets="@../css/mystyle.css" xmlns="http://javafx.com/javafx/8.0.91" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainController">
    <center>
       <HBox>
          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="750.0" prefWidth="246.0" styleClass="sidebar-menu">
@@ -169,7 +169,7 @@
          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="755.0" prefWidth="719.0" styleClass="page-content" HBox.hgrow="ALWAYS">
             <children>
                <Label layoutX="33.0" layoutY="30.0" text="Label" />
-               <LineChart layoutX="31.0" layoutY="75.0" prefHeight="319.0" prefWidth="1149.0">
+               <LineChart layoutX="31.0" layoutY="75.0" prefHeight="319.0" prefWidth="909.0">
                  <xAxis>
                    <CategoryAxis side="BOTTOM" />
                  </xAxis>
@@ -177,26 +177,16 @@
                    <NumberAxis side="LEFT" />
                  </yAxis>
                </LineChart>
-               <TableView layoutX="55.0" layoutY="400.0" prefHeight="419.0" prefWidth="358.0">
+               <TableView layoutX="55.0" layoutY="400.0" prefHeight="347.0" prefWidth="400.0">
                  <columns>
-                   <TableColumn prefWidth="75.0" text="通道" />
-                   <TableColumn prefWidth="75.0" text="病人姓名" />
-                     <TableColumn prefWidth="82.42263793945312" text="样本类型" />
-                     <TableColumn prefWidth="136.45245361328125" text="样本秒速" />
+                   <TableColumn prefWidth="75.0" text="C1" />
+                   <TableColumn prefWidth="75.0" text="C2" />
                  </columns>
                </TableView>
-               <TableView layoutX="429.0" layoutY="403.0" prefHeight="416.0" prefWidth="754.0">
+               <TableView layoutX="514.0" layoutY="401.0" prefHeight="346.0" prefWidth="426.0">
                  <columns>
-                   <TableColumn prefWidth="75.0" text="R(min)" />
-                   <TableColumn prefWidth="75.0" text="K(min)" />
-                     <TableColumn prefWidth="75.0" text="Angle(o)" />
-                     <TableColumn prefWidth="75.0" text="MA(mm)" />
-                     <TableColumn prefWidth="75.0" text="PMA" />
-                     <TableColumn prefWidth="47.9444580078125" text="G" />
-                     <TableColumn prefWidth="79.552001953125" text="EPL(%)" />
-                     <TableColumn prefWidth="64.7298583984375" text="A(mm)" />
-                     <TableColumn prefWidth="66.711181640625" text="CI" />
-                     <TableColumn prefWidth="66.711181640625" text="LY30(%)" />
+                   <TableColumn prefWidth="75.0" text="C1" />
+                   <TableColumn prefWidth="75.0" text="C2" />
                  </columns>
                </TableView>
             </children>
