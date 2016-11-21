@@ -3,3 +3,5 @@ test
 build
 gradle
 .gradle
+.DS_Store
+classes

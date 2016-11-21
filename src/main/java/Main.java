@@ -3,6 +3,7 @@ import javafx.application.Application;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 import controller.Manager;
+import rs485.Port;
 
 public class Main extends Application {
 
@@ -16,6 +17,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
+        Port port = new Port();
         Manager manager = new Manager(primaryStage);
         manager.doLogout();
         primaryStage.show();
